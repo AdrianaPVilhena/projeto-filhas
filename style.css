@@ -1,0 +1,101 @@
+@charset "UTF8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    font-family: 'kalam';
+    src: url('font/Kalam-Regular.ttf') format('opentype');
+}
+:root{
+    --cor0: #5B4F61;
+    --cor1: #513261;
+    --cor2: #925AAD;
+    --cor3: #BC75E0;
+    --cor4: #D8BCE6;
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'kalam';
+}
+
+html, body{
+    min-height: 100vh;
+}
+
+header{
+    font-family: 'kalam';
+    color: white;
+    background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
+}
+
+header > h1{
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 5vw;
+    padding-left: 35px;
+    font-family: var(--fonte2);
+    font-size: 2.5vw;
+}
+
+section > p{
+    font-weight: bold;
+    padding-bottom: 2em;
+
+}
+
+section.normal{
+    background-image: linear-gradient(to left, var(--cor4), white);
+    text-align: center;
+}
+
+section.imagem{
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.589);
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: #0b140b59;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img1{
+    background-image: url('image/irmasp.jpg');
+    background-position: center center;
+}
+
+section#img2{
+    background-image: url('image/irmas2.jpg');
+}
+
+footer{
+    font-family: var(--fonte2);
+    background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
